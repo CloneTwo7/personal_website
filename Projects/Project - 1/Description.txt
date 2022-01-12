@@ -1,0 +1,3 @@
+One of the first additions to my new apartment was a poster made up of Monty Python and the Holy Grail quotes placed neatly over my bathroom toilet.
+
+It was only a matter of time before inspiration struck me and struck me it did! As I was contemplating out to make a project relating to Monty Python there was one quote that stuck with me "One... Two... Five!" "Three sir! Three!" And that's when I decided the only reasonable thing to construct would be a real live Holy Hand Grenade. For this project I used a raspberry pie and some explosives. All of the coding was done, for thematic reasons, in Python.
