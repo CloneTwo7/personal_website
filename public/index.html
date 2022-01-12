@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <!--Declarations for website, stylesheet, etc.-->
+        <title>Home Page</title>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <link href="../../css/main.css" type="text/css" rel="stylesheet">
+        <!--Top Navigation bar is declared-->
+        <div class="topnav">
+            <!--Left side includes name with link to home-->
+            <div class="left-side"> 
+                <a href="/">Travis Peterson</a>
+            </div>
+            <!--Right side includes links to social media and github-->
+            <div class="right-side">
+                <a href="https://twitter.com/IndentYourCode"><img src="../images/twitter.png" width="40" height="40"></style></a>
+                <a href="https://www.instagram.com/t_doge/"><img src="../images/instagram.png" width="40" height="40"></a>
+                <a href="https://www.linkedin.com/in/travis-peterson-asm15/"><img src="../images/linkedin.png" width="40" height="40"></a>
+                <a href="https://github.com/CloneTwo7"><img src="../images/github.png" width="40" height="40"></a>
+            </div>
+        </div>
+    </head>
+<body>
+        <!--Declares navigation links-->
+    <div class="links">
+        <a href="/about/">About</a>
+        <a href="/blog/">Blog</a>
+        <a href="/resume/">Resume</a>
+        <a href="/projects/">Projects</a>            
+        <a href="/contact/">Contact</a>
+    </div>
+            <!--Slideshow of pictures.... ideally pictures related to blog posts or projects-->
+        <div id="slideshow">
+            <div class="mySlides nextSlide">
+                <img src="images/PXL_20210915_164231882.jpg">
+                <div class="vignette"></div>
+                <div class="titleCorner">Silver Star Mountains</div>
+            </div>
+            <div class="mySlides nextSlide">
+                <img src="images/PXL_20210915_170240223.jpg">
+                <div class="vignette"></div>
+                <div class="titleCorner">Silver Star Mountains</div>
+            </div>
+            <div class="mySlides nextSlide">
+                <img src="images/PXL_20210915_183457410.jpg">
+                <div class="vignette"></div>
+                <div class="titleCorner">Silver Star Mountains</div>
+            </div>
+
+        </div>
+
+        <!--script for logic-->
+        <script>
+            /* controls the logic for the slideshow */
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                var slides = document.getElementsByClassName("mySlides");
+                for (var i = 0; i < slides.length; i++) {
+                    //Loops through and sets all slides to not display
+                    slides[i].style.display = "none";
+                }
+                slideIndex++; //Increments to the next index
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                } //set to first slide if no more available
+                slides[slideIndex-1].style.display = "block"; //display current slide
+                setTimeout(showSlides, 5000); // Change image every 5 seconds
+            } 
+        </script>
+    <footer class="site-footer">
+    <p><br>
+</footer>
+</body>
+</html>

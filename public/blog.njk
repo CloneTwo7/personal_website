@@ -1,0 +1,17 @@
+---
+title: Blog
+layout: 'base.njk'
+---
+<div class="sectionContainer">
+    <h1 class="sectionTitle">Recent Farticles</h1>
+</div>
+
+
+<ul>
+    {%- for post in collections.post -%}
+        <article class="snippet">
+            <img src="{{post.data.image}}">
+            <h3 class="snippet_title"> {{post.data.title}} </h3>
+        </article>
+    {%- endfor -%}
+</ul>

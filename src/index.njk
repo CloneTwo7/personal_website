@@ -1,0 +1,43 @@
+---
+title: Home Page
+layout: 'base.njk'
+---
+        <!--Slideshow of pictures.... ideally pictures related to blog posts or projects-->
+        <div id="slideshow">
+            <div class="mySlides nextSlide">
+                <img src="images/PXL_20210915_164231882.jpg">
+                <div class="vignette"></div>
+                <div class="titleCorner">Silver Star Mountains</div>
+            </div>
+            <div class="mySlides nextSlide">
+                <img src="images/PXL_20210915_170240223.jpg">
+                <div class="vignette"></div>
+                <div class="titleCorner">Silver Star Mountains</div>
+            </div>
+            <div class="mySlides nextSlide">
+                <img src="images/PXL_20210915_183457410.jpg">
+                <div class="vignette"></div>
+                <div class="titleCorner">Silver Star Mountains</div>
+            </div>
+
+        </div>
+
+        <!--script for logic-->
+        <script>
+            /* controls the logic for the slideshow */
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                var slides = document.getElementsByClassName("mySlides");
+                for (var i = 0; i < slides.length; i++) {
+                    //Loops through and sets all slides to not display
+                    slides[i].style.display = "none";
+                }
+                slideIndex++; //Increments to the next index
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                } //set to first slide if no more available
+                slides[slideIndex-1].style.display = "block"; //display current slide
+                setTimeout(showSlides, 5000); // Change image every 5 seconds
+            } 
+        </script>
