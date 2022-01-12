@@ -38,6 +38,42 @@ body {
     background-size: cover;
 }
 
+body > .sectionContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    transform: translate(+50%,0);
+    border: double rgb(104, 104, 104);
+
+}
+
+body > .sectionContainer > .sectionTitle {
+    background-color: black;
+    margin: 0;
+    padding: 2px;
+    color: white;
+}
+
+article {
+    display: flex;
+    justify-content: left;
+    padding: 4px;
+    
+}
+
+article > img {
+    width: 200px;
+    height: 200px;
+    border: rgb(14, 13, 13) solid 20px;
+}
+
+article > .snippet_title {
+    padding: 10px;
+}
+
 body > p2 {
     font-size: 20px;
     padding: 1%;
