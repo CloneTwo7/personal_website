@@ -102,8 +102,8 @@ body > .links > a {
 }
 
 body > .links > a:hover {
-    padding: 2%;
     text-shadow:rgb(255, 255, 255) 2px 2px 4px;
+    box-shadow: 5px 5px 5px 5px rgb(14, 13, 13);    
 }
 
 body > #slideshow {
