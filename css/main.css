@@ -46,8 +46,8 @@ body > .sectionContainer {
     flex-direction: column;
     background-color: white;
     transform: translate(+50%,0);
-    border: double rgb(104, 104, 104);
-
+    border: solid rgb(104, 104, 104);
+    height: 400px;
 }
 
 body > .sectionContainer > .sectionTitle {
