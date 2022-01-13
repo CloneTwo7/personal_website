@@ -5,10 +5,14 @@ layout: 'base.njk'
 <div class="sectionContainer">
     <h1 class="sectionTitle">Recent Articles</h1>
     <ul>
-        {%- for post in collections.post -%}
+        {%- for post in collections.post | reverse -%}
             <article class="snippet">
                 <img src="{{post.data.image}}">
-                <h3 class="snippet_title"> {{post.data.title}} </h3>
+                <div class="snippet_text">
+                    <h3 class="snippet_title"> {{post.data.title}} </h3>
+                    <p class="snippet_description">{{post.data.description}}</p>
+                    <a href="{{post.url}}" class="btn btn--primary">Continue Reading</a>
+                </div>
             </article>
         {%- endfor -%}
     </ul>
