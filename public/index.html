@@ -29,11 +29,25 @@
             </div>
         </div>
     </head>
+
+    <script>
+        window.onscroll = function() {
+            for(i=0; i < document.querySelectorAll('.topnav .middle').length; i++) {
+                scrollFunction(i)
+            }
+        };        
+        function scrollFunction(i) {
+            if(document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+                document.getElementsByClassName('middle')[i].style.padding = "0%";
+            } else {
+                document.getElementsByClassName('middle')[i].style.paddingTop = "2%";
+            }
+        }
+    </script>
 </head>
 <body class="home">
-            <!--Slideshow of pictures.... ideally pictures related to blog posts or projects-->
-
-        <div id="slideshow">
+    
+            <div id="slideshow">
             <div class="mySlides nextSlide">
                 <img src="images/image17.png">
                 <div class="vignette"></div>

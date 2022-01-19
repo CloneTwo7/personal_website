@@ -29,6 +29,21 @@
             </div>
         </div>
     </head>
+
+    <script>
+        window.onscroll = function() {
+            for(i=0; i < document.querySelectorAll('.topnav .middle').length; i++) {
+                scrollFunction(i)
+            }
+        };        
+        function scrollFunction(i) {
+            if(document.body.scrollTop > 2 || document.documentElement.scrollTop > 2) {
+                document.getElementsByClassName('middle')[i].style.padding = "0%";
+            } else {
+                document.getElementsByClassName('middle')[i].style.paddingTop = "2%";
+            }
+        }
+    </script>
 </head>
 <body class>
         <div class="sectionContainer">
