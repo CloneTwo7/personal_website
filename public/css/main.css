@@ -19,27 +19,24 @@ html {
 
 .topnav > .left-side > a {
     color: rgb(239, 255, 243);
-    font-size: 40px;
-    justify-content: left;
+    font-size: 30px;
     text-decoration: none;
 }
 
+.topnav > .left-side > a:hover {
+    text-shadow:rgb(255, 255, 255) 2px 2px 4px;
+}
+
+
 .topnav > .middle {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 5px solid transparent;
-    width: 50%;
-    margin-top: 2%;
+    font-size: 25px;
+    padding-top: 2%;
 }
 
 .topnav > .middle > a {
     color:white;
-    background-color: rgb(22, 22, 26);
     text-decoration: none;
-    height: 100%;
-    width: 100%;
+    padding: 5px;
 }
 
 .topnav > .middle > a:hover {
@@ -48,7 +45,6 @@ html {
 
 .topnav > .right-side {
     margin-right:20px;
-    justify-content: right;
 }
 
 body {
@@ -61,11 +57,14 @@ body {
     background-size: cover;
 }
 
+.home {
+    background-image: linear-gradient(to left bottom, #9524ff , #2b92ff , #b9ff2d , #ffcb3b , #ff0088);
+}
+
+
+
 .sectionContainer  {
-    margin-top: 5%;
-    width: 50%;
-    transform: translate(+50%, 0%);
-    background-color: whitesmoke;
+    margin: 5%;
 }
 
 body > .sectionContainer > .sectionTitle {
@@ -117,7 +116,7 @@ article > .snippet_text {
 }
 
 
-body > p2 {
+.sectionContainer > p2 {
     font-size: 20px;
     padding: 1%;
     text-align: center;
@@ -131,7 +130,7 @@ body > p2 {
     border:rgb(14, 13, 13) solid;
 }
 
-body > form {
+.sectionContainer > form {
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
@@ -142,19 +141,19 @@ body > form {
     width: 40%;
 }
 
-body > form > input[type=text] {
+.sectionContainer > form > input[type=text] {
     padding: 10px;
     margin: 2px;
 }
 
-body > form > textarea {
+.sectionContainer > form > textarea {
     resize: none;
     padding: 10px;
     margin: 2px;
     margin-bottom: 20px;
 }
 
-body > form > input[type=submit], input[type=reset] {
+.sectionContainer > form > input[type=submit], input[type=reset] {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     background-color:rgb(22, 22, 26);
@@ -170,6 +169,7 @@ body > #slideshow {
     height: 60vh;
     width: 70vw;
     border:rgb(22, 22, 26) solid 8px;
+    background-color: rgb(22, 22, 26);
     transform: translate(-50%, -50%);
 }
 
@@ -217,4 +217,63 @@ footer {
     bottom: 0;
     background-color: #0e0d0d;
     width: 100%;
+}
+
+.portrait {
+    width: 400px;
+    height: 400px;
+
+}
+
+.portrait > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border: 5px solid rgb(22, 22, 26);
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+.resumeHeader {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.resumeHeader > ul {
+    list-style-type: none;
+    width: 30%;
+}
+
+.resumeHeader > ul > li > h4 {
+    opacity: 50%;
+}
+
+.resumeHeader > ul > li > h1 {
+    font-size: 50px;
+}
+
+.resumeHeader > ul > li > p {
+    font-size: 20px;
+}
+
+.resumeHistory {
+    display: flex;
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2%;
+}
+
+.resumeHistory > .resumeTag {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.resumeHistory > .resumeTag > ul {
+    list-style-type: none;
+}
+
+.resumeHistory > .resumeTag > ul > li > img {
+    width: 30px;
+    height: 30px;
 }
