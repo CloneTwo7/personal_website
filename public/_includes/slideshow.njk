@@ -1,19 +1,11 @@
         <div id="slideshow">
+            {%- for post in collections.post | reverse -%}
             <div class="mySlides nextSlide">
-                <img src="images/image17.png">
+                <img src="{{post.data.image}}">
                 <div class="vignette"></div>
-                <div class="titleCorner">Recent Pixel Art</div>
+                <div class="titleCorner"> {{post.data.title}} </div>
             </div>
-            <div class="mySlides nextSlide">
-                <img src="images/thumbnail.jpg">
-                <div class="vignette"></div>
-                <div class="titleCorner">Blade Runner - The Power of Adaptations</div>
-            </div>
-            <div class="mySlides nextSlide">
-                <img src="images/PXL_20210915_183457410.jpg">
-                <div class="vignette"></div>
-                <div class="titleCorner">My Hike at Silver Star Mountain</div>
-            </div>
+            {%- endfor -%}
         </div>
 
         <!--script for logic-->
