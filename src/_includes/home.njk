@@ -2,8 +2,9 @@
     {% include 'navbar.njk'%}
 </head>
 <body class="home">
-    {{ content | safe }}
+
     {%include 'slideshow.njk'%}
+    {{ content | safe }}
     {% include 'footer.njk'%}
 </body>
 </html>
