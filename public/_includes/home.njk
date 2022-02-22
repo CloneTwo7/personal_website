@@ -2,10 +2,10 @@
     {% include 'navbar.njk'%}
 </head>
 <body class="home">
-    <div class="sectionContainer">
-        {%include 'slideshow.njk'%}
-        {{ content | safe }}
-        {% include 'footer.njk'%}
-    </div>
+    <ul class="sectionContainer">
+        <li>{{ content | safe }}</li>
+        <li>{%include 'slideshow.njk'%}</li>
+        <li>{% include 'footer.njk'%}</li>
+    </ul>
 </body>
 </html>

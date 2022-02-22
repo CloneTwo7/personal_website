@@ -14,7 +14,7 @@ html {
     background-color: rgb(22, 22, 26);
     justify-content: space-between;
     border-bottom: 5px solid transparent;
-    border-image: linear-gradient(to left bottom, #9524ff , #2b92ff , #b9ff2d , #ffcb3b , #ff0088);
+    border-image: linear-gradient(to left, #ffcb3b , #ff0088);
     border-image-slice: 1;
     padding: 1%;
     font-family: 'Courier New', Courier, monospace;
@@ -112,9 +112,13 @@ body {
 }
 
 .home {
-    background-image: linear-gradient(to left bottom, #9524ff , #2b92ff , #b9ff2d , #ffcb3b , #ff0088);
+    background-image: linear-gradient(to left bottom, #b9ff2d , #ffcb3b , #ff0088);
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+.home > .div {
+    background-color: white;
+    height: 100%;
 }
 
 .home > .sectionContainer > .div {
