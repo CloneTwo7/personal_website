@@ -1,8 +1,9 @@
-<!DOCTYPE html>
+<head> 
+    <!DOCTYPE html>
 <html lang="en">
     <head> 
         <!--Declarations for website, stylesheet, etc.-->
-        <title>{{title}}</title>
+        <title>Home Page</title>
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
         <meta content="utf-8" http-equiv="encoding">
         <link href="../../css/main.css" type="text/css" rel="stylesheet">
@@ -53,3 +54,45 @@
             }
         }
     </script>
+</head>
+<body class="home">
+    <div class="sectionContainer">
+                <div id="slideshow">
+            <div class="slideshowTitle"><h1>My Recent Projects<h1></div><div class="mySlides nextSlide">
+                <img src="/images/image17.png">
+                <div class="vignette"></div>
+                <div class="titleCorner"><a href="/blog/blog1/">Diving Into Pixel Art</a></div>
+            </div><div class="mySlides nextSlide">
+                <img src="/images/newspaper.jpg">
+                <div class="vignette"></div>
+                <div class="titleCorner"><a href="/blog/blog2/">I Give Props to Call of Cthulhu</a></div>
+            </div></div>
+
+        <!--script for logic-->
+        <script>
+            /* controls the logic for the slideshow */
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                var slides = document.getElementsByClassName("mySlides");
+                for (var i = 0; i < slides.length; i++) {
+                    //Loops through and sets all slides to not display
+                    slides[i].style.display = "none";
+                }
+                slideIndex++; //Increments to the next index
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                } //set to first slide if no more available
+                slides[slideIndex-1].style.display = "block"; //display current slide
+                setTimeout(showSlides, 5000); // Change image every 5 seconds
+            } 
+        </script>
+        <div class="sectionContainer">
+
+</div>
+        <footer class="site-footer">
+    <p><br>
+</footer>
+    </div>
+</body>
+</html>
