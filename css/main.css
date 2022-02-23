@@ -6,19 +6,36 @@ html {
     background: #5c7385; /* WebKit/Blink Browsers */
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+  }
+::-webkit-scrollbar-track {
+    background-color: rgb(22, 22, 26);
+}
+
+::-webkit-scrollbar-thumb {
+    background: black; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(22, 22, 26);
+}
+
 .topnav {
     position: sticky;
     top: 0;
     display: flex;
     align-self: flex-start;
-    background-color: rgb(22, 22, 26);
+    background-color: rgb(11, 11, 14);
     justify-content: space-between;
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(to left, #ffcb3b , #ff0088);
     border-image-slice: 1;
-    padding: 1%;
     font-family: 'Courier New', Courier, monospace;
     z-index: 1;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 .topnav > .left-side > a {
@@ -115,16 +132,19 @@ body {
     background-image: linear-gradient(to left bottom, #b9ff2d , #ffcb3b , #ff0088);
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-.home > .div {
-    background-color: white;
-    height: 100%;
+    height: 200vh;
 }
 
-.home > .sectionContainer > .div {
-    background-color: white;
+.home > ul {
+    list-style-type: none;
+    transform: translate(0, +30vh);
+}
+
+.banner {
+    margin-top: 200px;
+    background-color:rgb(22, 22, 26);
+    height: 40vh;
     width: 100%;
-    height: 200%;
 }
 
 .btn--primary {
@@ -146,7 +166,7 @@ body {
 }
 
 .sectionTitle {
-    background-color: rgb(22, 22, 26);
+    background-color:rgb(25, 25, 27);
     margin: 0;
     padding-left: 5%;
     color: white;
@@ -195,7 +215,7 @@ article > img {
     width: 100%;
 }
 
-.sectionContainer > p2 {
+.sectionContainer > p {
     font-size: 20px;
     padding: 1%;
     text-align: center;
@@ -242,14 +262,14 @@ article > img {
 }
 
 #slideshow {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     height: 60vh;
-    width: 70vw;
-    border:rgb(22, 22, 26) solid 8px;
+    width: 80vw;
+    border:rgb(25, 25, 27) solid 8px;
     border-radius: 0px 10px 10px 10px;
-    background-color: rgb(22, 22, 26);
+    background-color: rgb(25, 25, 27);
     transform: translate(-50%, -40%);
 }
 
@@ -258,9 +278,9 @@ article > img {
     position: absolute;
     color: whitesmoke;
     transform: translate( -8px, -75px );
-    border:rgb(22, 22, 26) solid 8px;
+    border:rgb(25, 25, 27) solid 8px;
     border-radius: 30px;
-    background-color: rgb(22, 22, 26);
+    background-color: rgb(25, 25, 27);
     padding-left: 1%;
     padding-right: 1%;
 }
@@ -269,7 +289,6 @@ article > img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-
     position: absolute;
     animation-name: nextSlide;
     animation-duration: 2s;
@@ -285,7 +304,7 @@ article > img {
 #slideshow > .mySlides > .titleCorner {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    background-color: rgb(22, 22, 26);
+    background-color: rgb(25, 25, 27);
     padding: 1%;
     position: fixed;
     font-size: 30px;
@@ -304,12 +323,11 @@ article > img {
     to {opacity: 1;}
 }
 
-footer {
-    display: none;
-    position: absolute;
-    bottom: 0;
-    background-color: #0e0d0d;
-    width: 100%;
+.site-footer {
+    position: relative;
+    transform: translate(0, 100vh);
+    height: 10%;
+    background: rgb(11, 11, 14);
 }
 
 .portrait {

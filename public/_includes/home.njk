@@ -3,9 +3,10 @@
 </head>
 <body class="home">
     <ul class="sectionContainer">
-        <li>{{ content | safe }}</li>
         <li>{%include 'slideshow.njk'%}</li>
-        <li>{% include 'footer.njk'%}</li>
+        <li>{{ content | safe }}</li>
     </ul>
+    <div class="banner"></div>
 </body>
+    {% include 'footer.njk'%}
 </html>
