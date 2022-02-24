@@ -37,6 +37,7 @@
                 </div>
             </div>
         </div>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script>
         window.onscroll = function() {
@@ -59,15 +60,15 @@
             <div class="slideshowTitle"><h1>My Recent Blog Posts<h1></div><div class="mySlides nextSlide">
                 <img src="/images/project_banner_website.png">
                 <div class="vignette"></div>
-                <div class="titleCorner"><a href="/blog/blog3/">My Personal Website - Finished and Flawed</a></div>
+                <div class="titleCorner"><a href="/blog/2022-02-22-blog-three/">My Personal Website - Finished and Flawed</a></div>
             </div><div class="mySlides nextSlide">
                 <img src="/images/image17.png">
                 <div class="vignette"></div>
-                <div class="titleCorner"><a href="/blog/blog1/">Diving Into Pixel Art</a></div>
+                <div class="titleCorner"><a href="/blog/2022-01-27-blog-one/">Diving Into Pixel Art</a></div>
             </div><div class="mySlides nextSlide">
                 <img src="/images/newspaper.jpg">
                 <div class="vignette"></div>
-                <div class="titleCorner"><a href="/blog/blog2/">I Give Props to Call of Cthulhu</a></div>
+                <div class="titleCorner"><a href="/blog/2021-12-27-blog-two/">I Give Props to Call of Cthulhu</a></div>
             </div></div>
 
         <!--script for logic-->
@@ -92,6 +93,17 @@
         <li></li>
     </ul>
     <div class="divider"></div>
+    <script>
+        if (window.netlifyIdentity) {
+            window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+                });
+            }
+            });
+        }
+    </script>
 </body>
     <footer class="site-footer">
 
