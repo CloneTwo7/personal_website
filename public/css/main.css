@@ -132,7 +132,6 @@ body {
     background-image: linear-gradient(to left bottom, #b9ff2d , #ffcb3b , #ff0088);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 200vh;
 }
 
 .home > ul {
@@ -140,7 +139,7 @@ body {
     transform: translate(0, +30vh);
 }
 
-.banner {
+.divider {
     margin-top: 200px;
     background-color:rgb(22, 22, 26);
     height: 40vh;
@@ -325,7 +324,7 @@ article > img {
 
 .site-footer {
     position: relative;
-    transform: translate(0, 100vh);
+    transform: translate(0, 50vh);
     height: 10%;
     background: rgb(11, 11, 14);
 }
