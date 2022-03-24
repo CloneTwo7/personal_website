@@ -7,7 +7,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 1rem;
   }
 ::-webkit-scrollbar-track {
     background-color: rgb(22, 22, 26);
@@ -28,7 +28,7 @@ html {
     align-self: flex-start;
     background-color: rgb(11, 11, 14);
     justify-content: space-between;
-    border-bottom: 5px solid transparent;
+    border-bottom: 0.5rem solid transparent;
     border-image: linear-gradient(to left, #ffcb3b , #ff0088);
     border-image-slice: 1;
     font-family: 'Courier New', Courier, monospace;
@@ -40,17 +40,17 @@ html {
 
 .topnav > .left-side > a {
     color: rgb(239, 255, 243);
-    font-size: 30px;
+    font-size: 2rem;
     text-decoration: none;
 }
 
 .topnav > .left-side > a:hover {
-    text-shadow:rgb(255, 255, 255) 2px 2px 4px;
+    text-shadow:rgb(255, 255, 255) 0.1rem 0.1rem 0.2rem;
 }
 
 
 .topnav > .middle {
-    font-size: 25px;
+    font-size: 1.75rem;
     transition: 0.4s; 
     list-style-type: none;
 }
@@ -62,15 +62,15 @@ html {
 .topnav > .middle > li > a {
     color:white;
     text-decoration: none;
-    padding: 5px;
+    padding: 0.5rem;
 }
 
 .topnav > .middle > li > a:hover {
-    text-shadow:rgb(255, 255, 255) 2px 2px 4px;
+    text-shadow:rgb(255, 255, 255) 0.1rem 0.1rem 0.2rem;
 }
 
 .topnav > .right-side {
-    margin-right:20px;
+    margin-right: 1rem;
 }
 
 .dropdownNav {
@@ -81,46 +81,6 @@ html {
     display: block;
 }
 
-@media (max-width: 960px) {
-    .middle { display: none;}
-    .right-side { display: none;}
- /* Dropdown Button */
- .dropbtn {
-    border: none;
-  }
-  .dropbtn > img {
-      width: 50px;
-      height: 50px;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdownNav {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:rgb(14, 13, 13);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color:rgb(239, 255, 243);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Show the dropdown menu on hover */
-  .dropdownNav:hover .dropdown-content {display: block;}  
-}
-
 body {
     margin: 0;
     height: 100vh;
@@ -128,24 +88,21 @@ body {
     background-image: linear-gradient(to left top, #ffffff , #dadada) fixed;
 }
 
-.home {
-    background-image: linear-gradient(to left bottom, #b9ff2d , #ffcb3b , #ff0088);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+.divider {
+    margin-top: 2rem;
+    background-color:rgb(22, 22, 26);
+    height: 20rem;
 }
 
+.home {
+    background-image: linear-gradient(to left bottom, #ffcb3b , #ff0088);    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+   
 .home > ul {
     list-style-type: none;
     transform: translate(0, +30vh);
 }
-
-.divider {
-    margin-top: 200px;
-    background-color:rgb(22, 22, 26);
-    height: 40vh;
-    width: 100%;
-}
-
 .btn--primary {
     color: white;
     background-color: rgb(22, 22, 26);
@@ -155,9 +112,8 @@ body {
 }
 
 .btn--primary:hover {
-    text-shadow:rgb(255, 255, 255) 2px 2px 4px;
+    text-shadow:rgb(255, 255, 255) 0.1rem 0.1rem 0.2rem;
 }
-
 .sectionContainer  {
     margin: 5%;
     margin-left: 20%;
@@ -165,20 +121,21 @@ body {
 }
 
 .sectionTitle {
-    background-color:rgb(25, 25, 27);
+    color:rgb(25, 25, 27);
+    text-decoration: underline;
     margin: 0;
     padding-left: 5%;
-    color: white;
+    font-size: 3rem;
 }
 
 article {
     display: flex;
-    padding: 4px;
+    padding: 0.25rem;
 }
 
 article > img {
-    width: 300px;
-    height: 300px;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
     border:rgb(22, 22, 26) solid;
     border-radius: 25%;
@@ -187,35 +144,37 @@ article > img {
 
 .articleText {
     margin: 5%;
-    font-size: 20px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color:rgb(25, 25, 27);
 }
 
 .snippet_text {
-    padding: 10px;
+    padding: 1rem;
+    line-height: 1.5rem;
     display: flex;
     flex-direction: column;
 }
 
 .projectsLayout > ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
     list-style-type: none;
 }
 
 .projectsLayout > ul > li {
     height: 250px;
     width: 400px;
-    padding: 1%;
+    
 }
 
 .projectsLayout > ul > li > img {
     height: 100%;
     width: 100%;
+    
 }
 
 .sectionContainer > p {
-    font-size: 20px;
+    font-size: 1rem;
     padding: 1%;
     text-align: center;
 
@@ -229,10 +188,10 @@ article > img {
 }
 
 .sectionContainer > form {
-    font-size: 20px;
+    font-size: 2rem;
     margin-left: auto;
     margin-right: auto;
-    transform: translate(0, 150px);
+    transform: translate(0, 10rem);
     display: flex;
     justify-content:center;
     flex-direction: column;
@@ -240,15 +199,15 @@ article > img {
 }
 
 .sectionContainer > form > input[type=text] {
-    padding: 10px;
-    margin: 2px;
+    padding: 1rem;
+    margin: 0.25rem;
 }
 
 .sectionContainer > form > textarea {
     resize: none;
-    padding: 10px;
-    margin: 2px;
-    margin-bottom: 20px;
+    padding: 1rem;
+    margin: 0.25rem;
+    margin-bottom: 1rem;
 }
 
 .sectionContainer > form > input[type=submit], input[type=reset] {
@@ -266,19 +225,17 @@ article > img {
     left: 50%;
     height: 60vh;
     width: 80vw;
-    border:rgb(25, 25, 27) solid 8px;
-    border-radius: 0px 10px 10px 10px;
+    border:rgb(25, 25, 27) solid 0.25rem;
     background-color: rgb(25, 25, 27);
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, +45%);
 }
 
 #slideshow > .slideshowTitle {
     justify-content: center;
     position: absolute;
     color: whitesmoke;
-    transform: translate( -8px, -75px );
-    border:rgb(25, 25, 27) solid 8px;
-    border-radius: 30px;
+    transform: translate( -0.25rem, -4.5rem );
+    border:rgb(25, 25, 27) solid 0.25rem;
     background-color: rgb(25, 25, 27);
     padding-left: 1%;
     padding-right: 1%;
@@ -294,7 +251,7 @@ article > img {
     animation-direction:normal;
 }
 #slideshow > .mySlides > .vignette {
-    box-shadow: inset 0 0 200px black;
+    box-shadow: inset 0 0 12.5rem black;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -306,10 +263,9 @@ article > img {
     background-color: rgb(25, 25, 27);
     padding: 1%;
     position: fixed;
-    font-size: 30px;
+    font-size: 2rem;
     bottom: 0;
     right: 0;
-    border-radius: 30px 0px 0px 0px;
 }
 
 .titleCorner > a {
@@ -330,15 +286,15 @@ article > img {
 }
 
 .portrait {
-    width: 400px;
-    height: 400px;
+    width: 22rem;
+    height: 22rem;
 }
 
 .portrait > img {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    border: 5px solid rgb(22, 22, 26);
+    border: 0.25rem solid rgb(22, 22, 26);
     border-radius: 25%;
     overflow: hidden;
 }
@@ -348,7 +304,7 @@ article > img {
 }
 
 .pronouns {
-    font-size: 20px;
+    font-size: 1.2rem;
     opacity: 40%;
 }
 
@@ -368,11 +324,11 @@ article > img {
 }
 
 .resumeHeader > ul > li > h1 {
-    font-size: 50px;
+    font-size: 3.5rem;
 }
 
 .resumeHeader > ul > li > p {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .resumeHistory {
@@ -401,6 +357,53 @@ article > img {
 }
 
 .resumeHistory > .resumeTag > ul > li > img {
-    width: 30px;
-    height: 30px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.about_me {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.container_one {
+    width: 30rem;
+    height: 35rem;
+    background-color: white;
+    margin: 4rem;
+    margin-top: 6rem;
+    margin-right: 5rem;
+}
+
+.container_one > h1 {
+    color: white;
+    background-color:rgb(22, 22, 26);
+    width: 30rem;
+    padding: 1rem;
+    transform: translate(-1rem, -2rem);
+    font-size: 40;
+}
+
+.container_one > p {
+    color:rgb(37, 37, 41);
+    font-size: 2rem;
+    line-height: 2.75rem;
+    margin: 1rem;
+
+}
+
+
+.conatiner_two {
+    width: 28rem;
+    height: 40rem;
+    background-color:rgb(22, 22, 26);
+    margin: 4rem;
+    margin-left: 5rem;
+}
+
+.conatiner_two > img {
+    max-width: 30rem;
+    max-height: 40rem;
+    transform: translate(+1rem, -1rem);
 }

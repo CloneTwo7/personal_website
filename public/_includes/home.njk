@@ -2,11 +2,7 @@
     {% include 'navbar.njk'%}
 </head>
 <body class="home">
-    <ul class="sectionContainer">
-        <li>{%include 'slideshow.njk'%}</li>
-        <li>{{ content | safe }}</li>
-    </ul>
-    <div class="divider"></div>
+    {{ content | safe }}
     <script>
         if (window.netlifyIdentity) {
             window.netlifyIdentity.on("init", user => {
@@ -19,4 +15,4 @@
         }
     </script>
 </body>
-    {% include 'footer.njk'%}
+{% include 'footer.njk'%}
